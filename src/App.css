@@ -1,0 +1,23 @@
+.App {
+    min-width: 320px;
+    min-height: 100vh;
+    transition: all 0.5s ease;
+}
+
+.app--container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.background-color__light {
+    background-color: #fff;
+}
+
+.background-color__dark {
+    background-color: var(--backgroundColorNight);
+}

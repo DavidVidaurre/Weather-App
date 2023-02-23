@@ -1,0 +1,19 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 280px;
+}
+
+@media screen and (max-width: 960px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+}

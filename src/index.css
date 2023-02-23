@@ -1,0 +1,95 @@
+:root {
+  --textColor: #7F7F7F;
+  --backgroundColor: #FFFFFF;
+  --backgroundColorNight: #101014;
+  --themeBlueColor: #1A2841;
+  --themeBlueColorLight: rgba(26, 40, 65, 0.2);
+  --themeGreenColor: #CBE16A;
+  --themeGreenColorLight: rgba(203, 225, 106, 0.7);
+  --themeOrangeColor: #F97F29;
+  --themeOrangeColorLight: rgba(249, 127, 41, 0.2);
+  --themeNightColor: #000038;
+  --themeNightColorLight: rgba(0, 0, 56, 0.2);
+  --asideBackgroundColor: #F5F5F5;
+  --asideBackgroundColorNight: #2A2A2A;
+  --cardBackgroundColor: #FFFFFF;
+  --cardBackgroundColorNight: #BAD8EC;
+  --cardBackgroundColorNightLight: rgba(186, 216, 236, 0.2);
+  --backgroundImageCard: linear-gradient(to bottom, #b4e5e9, #bbe8e2, #c6e9db, #d2ead6, #deebd4, #e5ead2, #ecead2, #f2e9d2, #f5e6d1, #f7e4d0, #f9e1d0, #fbdfd1);
+  --backgroundImageCard2: linear-gradient(to bottom, #000139, #00154c, #012260, #053175, #06408b, #12529d, #1e64af, #2b77c0, #4790cf, #65aadd, #85c3eb, #a7dcf9);
+  --backgrounProgressContainer: #E3E6ED;
+  --backgroundProgress: linear-gradient(145deg, rgba(249, 127, 41, 1) 0%, rgba(255, 255, 255, 1) 5%, rgba(249, 127, 41, 1) 10%, rgba(255, 255, 255, 1) 15%, rgba(249, 127, 41, 1) 20%, rgba(255, 255, 255, 1) 25%, rgba(249, 127, 41, 1) 30%, rgba(255, 255, 255, 1) 35%, rgba(249, 127, 41, 1) 40%, rgba(255, 255, 255, 1) 45%, rgba(249, 127, 41, 1) 50%, rgba(255, 255, 255, 1) 55%, rgba(249, 127, 41, 1) 60%, rgba(255, 255, 255, 1) 65%, rgba(249, 127, 41, 1) 70%, rgba(255, 255, 255, 1) 75%, rgba(249, 127, 41, 1) 80%, rgba(255, 255, 255, 1) 85%, rgba(249, 127, 41, 1) 90%, rgba(255, 255, 255, 1) 95%, rgba(249, 127, 41, 1) 100%);
+  ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background-color: var(--backgroundColor);
+  font-size: 62.5%;
+}
+
+@keyframes animate-cloud__5s {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -146px;
+  }
+}
+
+@keyframes animate-cloud__20s {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -323px;
+  }
+}
+
+@keyframes animate-cloud__10s {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -223px;
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-fwd-center {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes flip-vertical-right {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}

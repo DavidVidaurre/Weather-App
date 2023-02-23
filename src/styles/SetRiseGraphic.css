@@ -1,0 +1,133 @@
+.graphic-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    position: relative;
+}
+
+.graphic {
+    width: 220px;
+    height: 110px;
+    border-radius: 110px 110px 0 0;
+    border: 1.5px solid transparent;
+    border-top: 1.5px dashed var(--themeOrangeColor);
+    overflow: hidden;
+    position: relative;
+}
+
+.graphic__moon {
+    border-top-color: var(--themeNightColor);
+}
+
+.graphic-fill {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 50%;
+    height: 110px;
+    border-radius: 110px 0 0 0;
+    background-color: var(--themeOrangeColorLight);
+}
+
+.graphic-fill__moon {
+    background-color: var(--themeNightColorLight);
+}
+
+.bottom-bar,
+.bottom-bar__moon {
+    width: 100%;
+    height: 1.5px;
+    margin-top: -1.5px;
+    background-color: var(--themeOrangeColor);
+    position: relative;
+}
+
+.bottom-bar__moon {
+    background-color: var(--themeNightColor);
+}
+
+.bottom-bar::after,
+.bottom-bar::before,
+.bottom-bar__moon::after,
+.bottom-bar__moon::before {
+    content: '';
+    position: absolute;
+    bottom: -1.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.bottom-bar::after,
+.bottom-bar::before {
+    background-color: var(--themeOrangeColor);
+}
+
+.bottom-bar__moon::after,
+.bottom-bar__moon::before {
+    background-color: var(--themeNightColor);
+}
+
+.bottom-bar::after,
+.bottom-bar__moon::after {
+    left: 13.5px;
+}
+
+.bottom-bar::before,
+.bottom-bar__moon::before {
+    right: 13.5px;
+}
+
+.data--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.data--info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.data--info h3 {
+    font-size: 12px;
+    color: var(--themeBlueColor);
+}
+
+.data--info p {
+    font-size: 10px;
+    color: var(--textColor);
+}
+
+.data--info__night h3,
+.data--info__night p {
+    color: var(--backgroundColor);
+}
+
+.icon {
+    position: absolute;
+    top: -30px;
+    width: 30px;
+    height: 30px;
+}
+
+.icon::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 13px;
+    width: 2px;
+    height: 110px;
+    background-color: var(--themeOrangeColorLight);
+}
+
+.icon__moon::after {
+    background-color: var(--themeNightColorLight);
+}

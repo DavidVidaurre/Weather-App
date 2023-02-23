@@ -1,0 +1,80 @@
+.day-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+.principal--options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--asideBackgroundColor);
+}
+
+.option-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--themeBlueColor);
+    color: var(--backgroundColor);
+    border-radius: 15px;
+}
+
+.principal--options__night {
+    background-color: var(--asideBackgroundColorNight);
+}
+
+.principal--options li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+}
+
+.principal--options__night li {
+    color: var(--backgroundColor);
+}
+
+.principal--options li.active {
+    background-color: var(--themeOrangeColor);
+    color: var(--backgroundColor);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.principal--options__night li.active {
+    background-color: var(--cardBackgroundColorNight);
+    color: var(--backgroundColorNight);
+}
+
+.day-option--description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--themeBlueColor);
+    color: var(--backgroundColor);
+    border-radius: 15px;
+}
+
+.day-option--description__night {
+    background-color: var(--cardBackgroundColorNight);
+    color: var(--backgroundColorNight);
+}

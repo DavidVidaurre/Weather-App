@@ -1,0 +1,108 @@
+.aside {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    gap: 20px;
+    width: 300px;
+    background-color: var(--asideBackgroundColor);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.aside h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--themeBlueColor);
+}
+
+.aside h2::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 3px;
+    margin: 5px auto 0 auto;
+    background-color: var(--themeBlueColor);
+    position: relative;
+}
+
+.aside__night {
+    background-color: var(--asideBackgroundColorNight);
+}
+
+.aside__night h2 {
+    color: var(--cardBackgroundColorNight);
+}
+
+.aside__night h2::after {
+    background-color: var(--cardBackgroundColorNight);
+}
+
+.info--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    place-items: center;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+}
+
+.uv-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    background-color: var(--themeBlueColor);
+    border-radius: 15px;
+}
+
+.uv-card--icon {
+    width: 70px;
+}
+
+.uv-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+}
+
+.uv-card--info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.uv-card--info h3 {
+    font-size: 2rem;
+    color: var(--backgroundColor);
+}
+
+.uv-card--info-risk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--themeGreenColor);
+    border-radius: 15px;
+    height: 100%;
+    width: 70px;
+    font-size: 1.2rem;
+}
+
+.uv-card--description {
+    font-size: 1.2rem;
+    color: var(--backgroundColor);
+}
+
+@media screen and (max-width: 960px) {
+    .aside {
+        width: 100%;
+    }
+}

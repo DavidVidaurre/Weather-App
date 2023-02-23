@@ -1,0 +1,40 @@
+.highlights--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: slide-fwd-center .5s;
+}
+
+.highlights--container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--themeBlueColor);
+}
+
+.highlights--container h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 5px;
+    margin: 10px auto 0 auto;
+    background-color: var(--themeBlueColor);
+    position: relative;
+}
+
+.highlights--container__night h2 {
+    color: var(--backgroundColor);
+}
+
+.highlights--container__night h2::after {
+    background-color: var(--backgroundColor);
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    place-items: center;
+    gap: 20px;
+    width: 100%;
+}

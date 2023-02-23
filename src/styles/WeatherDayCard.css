@@ -1,0 +1,107 @@
+.weather-day-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 80px;
+    height: 180px;
+    padding: 10px 0;
+    border-radius: 15px;
+    background-color: var(--asideBackgroundColor);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    list-style: none;
+    flex-shrink: 0;
+}
+
+.weather-day-card__night {
+    background-color: var(--asideBackgroundColorNight);
+    color: var(--backgroundColor);
+}
+
+.weather-day-card.active {
+    justify-content: space-between;
+    gap: 0;
+    width: 150px;
+    background-color: var(--themeOrangeColor);
+    color: var(--backgroundColor);
+    font-weight: bold;
+    animation: flip-vertical-right 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.weather-day-card.active h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.weather-day-card.active h3::after {
+    background-color: var(--backgroundColor);
+}
+
+.weather-day-card__night.active {
+    background-color: var(--cardBackgroundColorNight);
+    color: var(--backgroundColorNight);
+}
+
+.weather-day-card__night.active h3::after {
+    background-color: var(--backgroundColorNight);
+}
+
+.weather-day-card--header {
+    width: 100%;
+}
+
+.weather-day-card--header h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.weather-day-card--header h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--backgroundColorNight);
+    margin: 10px auto 0 auto;
+}
+
+.weather-day-card--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-day-card--body svg {
+    width: 60px;
+    height: 60px;
+}
+
+.weather-day-card--body p {
+    font-size: 1.4rem;
+}
+
+.no-gap {
+    gap: 0;
+}
+
+.no-gap p {
+    font-size: 2rem;
+}
+
+.weather-day-card--footer {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.show-footer {
+    display: flex;
+    margin-top: 10px;
+}

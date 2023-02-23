@@ -1,0 +1,17 @@
+.main-view__forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.weather-day-card--list {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+    animation: slide-fwd-center .5s;
+    padding: 25px 0;
+}

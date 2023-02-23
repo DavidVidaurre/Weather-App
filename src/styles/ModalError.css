@@ -1,0 +1,58 @@
+.modal--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.modal--container__error {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.modal--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+    height: 170px;
+    padding: 20px;
+    background-color: var(--backgroundColor);
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    animation: scale-up-center .5s;
+}
+
+.modal--content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--themeBlueColor);
+}
+
+.modal--content p {
+    font-size: 1.5rem;
+    color: var(--textColor);
+    text-align: center;
+}
+
+.btn-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+    border: none;
+    background-color: var(--themeBlueColor);
+    color: var(--backgroundColor);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}

@@ -1,0 +1,42 @@
+.weather-card--footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.weather-card--footer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.weather-card--footer-card h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.weather-card--footer-card p {
+    font-size: 1.3rem;
+}
+
+.bg-color-1 {
+    background-color: var(--themeBlueColor);
+    color: var(--backgroundColor);
+}
+
+.bg-color-2 {
+    background-color: var(--themeGreenColor);
+}
+
+.bg-color-3 {
+    background-color: var(--backgroundColor);
+}

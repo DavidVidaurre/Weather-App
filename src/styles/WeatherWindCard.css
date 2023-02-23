@@ -1,0 +1,100 @@
+.weather-wind-card--progress-bar {
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    padding: 10px;
+    background: var(--backgroundColor);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.weather-wind-card--progress-bar--ranges {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.weather-wind-card--progress-bar--ranges--range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: var(--themeGreenColorLight);
+    color: var(--backgroundColor);
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    position: relative;
+}
+
+.weather-wind-card--progress-bar--ranges--range::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: calc(100% - 42px);
+    top: 30px;
+    border-right: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 7px solid transparent;
+    transform: rotate(180deg);
+}
+
+.range-1 {
+    background: var(--themeBlueColor);
+}
+
+.range-1::after {
+    border-bottom: 7px solid var(--themeBlueColor);
+}
+
+.range-2 {
+    background: var(--themeGreenColor);
+    color: #000000;
+}
+
+.range-2::after {
+    border-bottom: 7px solid var(--themeGreenColorLight);
+}
+
+
+.range-3 {
+    background: var(--themeOrangeColor);
+}
+
+.range-3::after {
+    border-bottom: 7px solid var(--themeOrangeColor);
+}
+
+
+.weather-wind-card--progress-bar--bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: var(--backgrounProgressContainer);
+}
+
+.weather-wind-card--progress-bar--bar--progress {
+    height: 100%;
+    border-radius: 10px;
+    background: var(--backgroundProgress);
+    position: relative;
+}
+
+.weather-wind-card--progress-bar--bar--progress::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -7px;
+    border-right: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid var(--themeOrangeColor);
+}
